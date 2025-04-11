@@ -1,0 +1,39 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
+.env
+*.env
+
+# Streamlit temporary files
+.streamlit/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Database and vectorstore files
+db/
+*.sqlite
+*.db
+
+# Compiled files
+*.so
+*.dll
+
+# Images and generated files
+workflow.png
+
+# Virtual environment
+venv/
+.env/
