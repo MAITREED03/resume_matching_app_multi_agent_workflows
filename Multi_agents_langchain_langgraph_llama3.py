@@ -21,15 +21,10 @@ from PIL import Image, ImageEnhance
 from dotenv import load_dotenv
 load_dotenv()
 
-from dotenv import load_dotenv
-import os
 
 
-model_name = os.getenv("MODEL_NAME")
-if not model_name:
-    raise ValueError("MODEL_NAME environment variable is not set!")
-else:
-    print(f"MODEL_NAME: {model_name}")
+llm = ChatGroq(model="llama3-70b-8192")
+
 
 def load_image(image_file):
     img = Image.open(image_file)
